@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 10px rgb(236, 231, 231);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+nav h2{
+    font-size: 16px;
+    font-weight: bolder;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav button{
+    width: 70px;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: #d3a87d;
+    border-width: 1px;
+    border: 2px solid #d3a87d;
+    cursor: pointer;
+}
+.header-one{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+}
+.view-one img{
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.view-two{
+    width: 600px;
+    margin-top: 50px;
+}
+.view-two h1{
+    font-size: 45px;
+}
+.view-two h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.view-two p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.view-two h4, #same{
+    font-family:  Mr Dafoe;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.view-two i{
+    font-size: 15px;
+}
+.company{
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+}
+.company h2{
+    font-size: 25px;
+}
+.company p{
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.bags{
+    margin-top: 120px;
+    padding: 50px;
+}
+.bags h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bags button{
+    padding: 10px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background-color: #d3a87d;
+    border: 2px solid #d3a87d;
+}
+.items{
+    position: relative;
+}
+.writing{
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    left: 26px;
+    transition: 0.5s;
+    background-color: whitesmoke;
+    visibility: hidden;
+}
+.items:hover .writing{
+    height: 150px;
+    bottom: 240px;
+    visibility: visible;
+}
+.items:hover img{
+    transform: scale(1.1);
+    rotate: (-3deg);
+}
+.selling{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(5,1fr);
+    text-align: center;
+    cursor: pointer;
+}
+.selling img{
+    border-radius: 5px;
+    width: 200px;
+    transition: 0.5s;
+}
+.items h5{
+    font-family: Marck Script;
+    font-weight: light;
+    font-size: 18px;
+}
+.items p{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+}
+#pricelist{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: #efdfbf;
+    padding: 20px;
+    margin-top: 100px
+}
+.footer-content p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.footer-content h2{
+    margin-left: 20px;
+    font-size: 16px;
+}
+.footer-content h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-content h1{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.footer-content input{
+    padding: 10px;
+    width: 270px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer-content input:focus{
+    border-color: aqua;
+}
+.footer-content button{
+    padding: 10px;
+    background-color:rgb(121, 121, 238);
+    border: none;
+    color: whitesmoke;
+    margin-left: -5px;
+}
+.footer-content li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+.footer-content li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.icons {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.icons a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.copyright{
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    background-color: burlywood;
+    font-size: 14px;
+
+}
+@media (max-width:768px) {
+    nav ul{
+       display: none;
+    }
+    .view-one img{
+        width: 250px;
+    }
+    .view-two h1{
+        font-size: 35px;
+    }
+    .view-two h2{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .view-two p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .view-two h4{
+        font-family:  Mr Dafoe;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .view-two i{
+        font-size: 16px;
+     }
+    .company h2{
+        font-size: 20px;
+    }
+    .company p{
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .selling{
+        display: grid;
+        gap: 20px;
+        grid-template-columns:repeat(2,1fr);
+        text-align: center;
+        cursor: pointer;
+    }
+    .writing{
+        height: 100px;
+        width: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+        left: 2px;
+        transition: 0.5s;
+        background-color: whitesmoke;
+        visibility: hidden;
+    }
+    #Branch{
+        display: none;
+    }
+    #Delivery{
+        display: none;
+    }
+    #customer{
+        display: none;
+    }
+    .footer-content p{
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
